@@ -2,9 +2,48 @@ body {
     font-family: 'Source Sans 3', sans-serif;
     font-weight: 300;
     color: var(--main-color);
+    background: orange;
+}
+
+img {
+    display: block;
+    max-width: 100%;
 }
 
 .center {
     padding-left: calc(50vw - 125px);
     padding-right: calc(50vw - 125px);
+    @media screen and (min-width: 767px) {
+        padding-left: calc(50vw - 360px);
+        padding-right: calc(50vw - 360px);
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    background: var(--main-color);
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-sizing: border-box;
+    width: 100%;
+    font-weight: 400;
+    margin: 0 auto;
 }

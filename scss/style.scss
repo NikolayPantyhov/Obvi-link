@@ -2,3 +2,44 @@
 @import "global";
 @import "nav";
 @import "header";
+@import "offer";
+@import "slider";
+@import "block";
+
+// .faq {
+//     margin-bottom: 20px;
+//     &__toggler {
+//         display: flex;
+//         align-items: center;
+//         gap: 16px;
+//     }
+//     &__marker {
+//         display: block;
+//         width: 20px;
+//         min-width: 20px;
+//         height: 20px;
+//         background: #000;
+//     }
+//     &__title {
+//         font-weight: 700;
+//         font-size: 24px;
+//         color: #000;
+//     }
+//     &__content {
+//         padding-left: 36px;
+//         margin: 20px 0;
+//     }
+//     &[open] {
+//         margin-bottom: 40px;
+//         .faq {
+//             &__marker {
+//                 rotate: 45deg;
+//                 background: #2d5e5e;
+//                 transition: .2s;
+//             }
+//             &__title {
+//                 color: #2d5e5e;
+//             }
+//         }
+//     }
+// }

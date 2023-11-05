@@ -1,0 +1,36 @@
+.block {
+    padding-bottom: 80px;
+    &__title {
+        font-size: 18px;
+        margin: 0 0 20px;
+    }
+    &__desc {
+        font-size: 14px;
+        line-height: 1.4;
+        margin: 0 0 35px;
+    }
+    &__img {
+        margin: 0 auto;
+        position: relative;
+        display: flex;
+        justify-content: center;
+    } 
+    
+    &:nth-child(2) {
+        .block__img:before {
+            @include phone-gradient(#34E48F, #3EDFF5, 50%);
+        }
+    }
+    &:nth-child(3) {
+        .block__img:before {
+            @include phone-gradient(#FFE663, #DE6DF0, 50%);
+        }
+    }
+    &:nth-child(4) {
+        .block__img:before {
+            @include phone-gradient(#9043F2, #87DBFF, 50%);
+        }
+    }
+
+    
+}

@@ -3,3 +3,18 @@
 :root {
     --main-color: #131313;
 }
+
+@mixin phone-gradient($startColor, $endColor, $top) {
+    content: "";
+    display: block;
+    position: absolute;
+    top: $top;
+    left: 50%;
+    translate: -50% -50%;
+    width: 100%;
+    height: 100%;
+    clip-path: polygon(0 25%, 100% 0, 100% 75%, 0% 100%);
+    background: #eff243;
+    z-index: -1;
+    background: linear-gradient(74deg, $startColor -8.4%, $endColor 96.66%);
+}
